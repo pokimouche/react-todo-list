@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Roboto", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 48px;
+  font-weight: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo img {
+  margin-right: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo {
+  margin-left: 69px;
+  display: flex;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  height: 193px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 130px;
+}
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+form {
+  display: flex;
+}
+
+.task-field {
+  background-color: #f2f7fd;
+  border: 1px solid #5c48d3;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 548px;
+  height: 65px;
+  font-size: 24px;
+  line-height: 29px;
+  padding: 5px;
+  color: #a8a8a8;
+}
+
+.crossed {
+  text-decoration: line-through;
+}
+
+.task-list {
+  margin-bottom: 148px;
+}
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  line-height: 34px;
+  margin-bottom: 10px;
+}
+
+.task-list li img {
+  margin-left: 20px;
+}
+
+.task-list li input {
+  margin-right: 20px;
+}
+
+.add-task {
+  background-color: #5c48d3;
+  border-radius: 10px;
+  width: 130px;
+  height: 65px;
+  font-size: 22px;
+  line-height: 27px;
+  cursor: pointer;
+  border: 1px solid #5c48d3;
+  /* identical to box height */
+  margin-left: 73px;
+  color: #ffffff;
+}
+
+.add-task:hover {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 130px;
+  height: 65px;
+  font-size: 22px;
+  line-height: 27px;
+  border: 1px solid #5c48d3;
+  /* identical to box height */
+  margin-left: 73px;
+  color: #5c48d3;
+}
+
+button:focus,
+input:focus {
+  outline: none;
+}
+
+footer {
+  margin-top: 105px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 15px;
+  line-height: 18px;
+
+  color: #5c48d3;
 }
 
-.App-link {
-  color: #61dafb;
+footer a {
+  font-weight: bold;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::placeholder {
+  /* Firefox, Chrome, Opera */
+  color: #a8a8a8;
 }
